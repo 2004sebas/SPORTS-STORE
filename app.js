@@ -35,7 +35,7 @@ function createCard(nameProduct, imgProduct, priceProduct) {
     imgCard.setAttribute('alt',nameProduct);
     comprar.textContent = "COMPRAR";
     price.textContent = priceProduct; 
-    eliminar.textContent = "X"
+    eliminar.textContent = "ELIMINAR";
     card.appendChild(tittle);
     card.appendChild(imgCard);
     card.appendChild(price);
@@ -59,5 +59,6 @@ function createCard(nameProduct, imgProduct, priceProduct) {
     function clear() {
         main.removeChild(card)
     }
+    
 
 }
