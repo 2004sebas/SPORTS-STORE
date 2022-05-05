@@ -11,11 +11,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(/Images/f.jpg);
+  background: url(Images/fondo.Body.jpg);
 }
 
 header {
-  background-color: #000041;
+  background: url(/Images/fondoHeader.jpg);
   width: 100%;
   height: 15rem;
   background-size: cover;
@@ -29,6 +29,7 @@ h1 {
   font-size: 3rem;
   color: #fff;
   margin: 1rem;
+  margin-left: 40rem;
   font-style: oblique;
   font-family: 'Roboto', sans-serif;
 }
@@ -108,8 +109,8 @@ select > option {
 }
 
 .card {
-  width: 20rem;
-  height: 25rem;
+  width: 25rem;
+  height: 28rem;
   font-family: 'Times New Roman', Times, serif;
   border-radius: 10px;
   border: solid 2px #000041;
@@ -117,7 +118,7 @@ select > option {
   flex-direction: column;
   align-items: center;
   margin: 1rem;  
-  background:url(Images/fondo.jpg);
+  background:url(/Images/fondoCard.jpg);
   
 }
 
@@ -148,14 +149,14 @@ select > option {
 }
 
 .img-card {
-  width: 40%;
-  height: 8rem;
+  width: 50%;
+  height: 10rem;
   border-radius: 10px;
   box-shadow: 0 0 10px #000041;
   background-size: cover;
   background-position: center;  
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .footer-card {
@@ -172,6 +173,7 @@ select > option {
   font-weight: 900;
   color: white;
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 0.5rem;
 }
 
 .btn-add  {
@@ -197,7 +199,7 @@ select > option {
 }
 
 footer {
-  background-color: #000041;
+  background: url(/Images/fondoHeader.jpg);
   color: #e7eaf0;
   width: 100%;
   height: 10rem;

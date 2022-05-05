@@ -53,7 +53,7 @@ function createCard(nameProduct, imgProduct, priceProduct) {
     eliminar.addEventListener('click', clear);
 
     function buy() {
-        alert(`EL balon comprado es: ${tittle.textContent}`)
+        alert(`¿DESEA COMPRAR EL ${tittle.textContent}?`)
 
     }
     function clear() {
