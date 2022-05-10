@@ -79,6 +79,9 @@ select > option {
   font-size: 1rem;
   margin-right: 1rem;
   display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
 }
 
 .fa-cart-plus {
@@ -89,9 +92,9 @@ select > option {
 }
 
 #p-counter {
-  font-size: 0.5rem;
-  background-color: #000041;
-  color: #fff;
+  font-size: 20rem;
+  background-color: red;
+  color: red;
   margin-right: 0.5rem;
   border-radius: 50%; 
   width: 1.3rem;

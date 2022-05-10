@@ -1,5 +1,6 @@
 const select = document.querySelector("#select-products")
 const main = document.querySelector("#main-market")
+const contador = document.querySelector("#p-counter")
 window.addEventListener("load", loadSelect);
 select.addEventListener("change", elementSelected);
 
@@ -53,8 +54,10 @@ function createCard(nameProduct, imgProduct, priceProduct) {
     eliminar.addEventListener('click', clear);
 
     function buy() {
-        alert(`¿DESEA COMPRAR EL ${tittle.textContent}?`)
-
+        let compra = 0;
+        alert(`¿DESEA COMPRAR EL ${tittle.textContent}?`);
+        compra++
+        contador.textContent = compra;
     }
     function clear() {
         main.removeChild(card)
