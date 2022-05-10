@@ -53,15 +53,13 @@ function createCard(nameProduct, imgProduct, priceProduct) {
     comprar.addEventListener('click',buy);
     eliminar.addEventListener('click', clear);
 
+    let newArray = []
     function buy() {
-        let compra = 0;
-        alert(`¿DESEA COMPRAR EL ${tittle.textContent}?`);
-        compra++
-        contador.textContent = compra;
+        alert(`¿DESEA COMPRAR EL ${tittle.textContent}?`)
+        newArray.push(tittle.textContent + '; ' + price.textContent)
+        console.log(newArray);
     }
     function clear() {
         main.removeChild(card)
     }
-    
-
 }
