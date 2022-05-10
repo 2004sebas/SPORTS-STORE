@@ -1,6 +1,7 @@
 const select = document.querySelector("#select-products")
 const main = document.querySelector("#main-market")
 const contador = document.querySelector("#p-counter")
+const textCompra = document.querySelector("#text")
 window.addEventListener("load", loadSelect);
 select.addEventListener("change", elementSelected);
 
@@ -10,10 +11,11 @@ function elementSelected(event) {
             nameProduct = element.name;
             imgProduct = element.img;
             priceProduct = element.price;
+            idProduct = element.id;
             
         }
     })
-    createCard(nameProduct, imgProduct, priceProduct);
+    createCard(nameProduct, imgProduct, priceProduct, idProduct);
 }
 
 function loadSelect() {
@@ -24,19 +26,21 @@ function loadSelect() {
         select.appendChild(opt);
     });
 }
-function createCard(nameProduct, imgProduct, priceProduct) {
+function createCard(nameProduct, imgProduct, priceProduct, idProduct) {
     const card = document.createElement('div');
     const tittle = document.createElement('h3');
     const imgCard = document.createElement('img');
     const price = document.createElement('p');
     const comprar = document.createElement('button');
     const eliminar = document.createElement('button');
+    const idcard = document.createElement('p')
     tittle.textContent = nameProduct;
     imgCard.setAttribute('src', imgProduct);
     imgCard.setAttribute('alt',nameProduct);
     comprar.textContent = "COMPRAR";
     price.textContent = priceProduct; 
     eliminar.textContent = "ELIMINAR";
+    idcard.textContent = idProduct;
     card.appendChild(tittle);
     card.appendChild(imgCard);
     card.appendChild(price);
@@ -55,9 +59,9 @@ function createCard(nameProduct, imgProduct, priceProduct) {
 
     let newArray = []
     function buy() {
-        alert(`¿DESEA COMPRAR EL ${tittle.textContent}?`)
-        newArray.push(tittle.textContent + '; ' + price.textContent)
-        console.log(newArray);
+        alert(`¿DESEA COMPRAR EL ${tittle.textContent}?`);
+        newArray.push(idProduct, nameProduct, priceProduct);
+        textCompra.textContent = newArray;
     }
     function clear() {
         main.removeChild(card)
